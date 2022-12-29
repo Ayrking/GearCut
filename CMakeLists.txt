@@ -3,4 +3,8 @@ project(GearCut)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(gear-cut main.cpp)
+include_directories(io)
+
+add_executable(gear-cut
+        main.cpp
+        io/command.h io/command.cpp)
